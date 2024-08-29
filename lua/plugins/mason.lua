@@ -32,6 +32,9 @@ return {
     opts = {
       ensure_installed = {
         "python",
+        "golines",
+        "goimports",
+        "gofumpt",
         -- add more arguments for adding more debuggers
       },
     },
