@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Mason plugins
 
@@ -11,6 +11,8 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
+        "gopls",
+        "clangd",
         -- add more arguments for adding more language servers
       },
     },
@@ -22,6 +24,9 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
+        "golines",
+        "goimports",
+        "gofumpt",
         -- add more arguments for adding more null-ls sources
       },
     },
@@ -32,9 +37,6 @@ return {
     opts = {
       ensure_installed = {
         "python",
-        "golines",
-        "goimports",
-        "gofumpt",
         -- add more arguments for adding more debuggers
       },
     },
